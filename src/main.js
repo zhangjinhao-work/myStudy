@@ -7,6 +7,9 @@ import less from 'less'
 import './plugins/element.js'
 import './index.css'
 import 'element-ui/lib/theme-chalk/index.css';
+import VueCropper from 'vue-cropper' 
+
+
 import axios from 'axios'
 Vue.config.productionTip = false
 
@@ -14,6 +17,8 @@ Vue.config.productionTip = false
 Vue.prototype.$axios = axios; 
 
 Vue.use(less)
+Vue.use(VueCropper)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
